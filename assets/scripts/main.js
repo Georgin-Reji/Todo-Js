@@ -139,10 +139,6 @@ const addTask = (ev) => {
 
 		del.addEventListener('click', deleteTask)
 
-		// document.querySelector(".subList").appendChild(label);
-		// document.querySelector(".subList").appendChild(para);
-		// document.querySelector(".subList").appendChild(del);
-
 	  document.querySelector('form').reset();
 	}
 
