@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="https://kit.fontawesome.com/469df30c75.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="./assets/styles/main.css">
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="title">
+				<h3>TO DO LIST</h3>
+			</div>
+			<div class="button">
+				<button id="toggle-btn" onclick="toggleAddTask()">Add Task</button>
+			</div>
+		</div>
+		<form id="formTaskId" class="formTask">
+			<div class="input">
+				<label>Tittle</label>
+				<input id="task-title" required type="text">
+			</div>
+			<div class="input">
+				<label>Description</label>
+				<textarea required id="task-desc" cols="30" rows="3"></textarea>
+			</div>
+			<div class="button btn-submit">
+				<button id="btn">Add Task</button>
+			</div>
+		</form>
+		<div class="containerTask">
+			<div class="pendingTask">
+				<div class="status">
+					<h4><i class="fa-solid fa-list-check"></i>  Tasks</h4>
+				</div>
+				<div class="list"></div>
+			</div>
+			<div class="doneTask">
+				<div class="status">
+					<h4><i class="fa-solid fa-check"></i> Done</h4>
+				</div>
+				<div id="doneListId" class="doneList"></div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="./assets/scripts/main.js"></script>
+</html>
