@@ -10,6 +10,7 @@ body {
 	display: flex;
 	justify-content: center;
 }
+
 .container {
     background-color: #252945;
     height: 700px;
@@ -25,8 +26,8 @@ body {
     padding: 1px;
 }
 
-.title h3 {
-
+.formTask {
+	display: none;
 }
 .button {
 	position: relative;
