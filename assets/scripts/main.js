@@ -20,7 +20,12 @@ function toggleAddTask() {
 
 const addTask = (ev) => {
 	ev.preventDefault();
+	var taskTitle = document.getElementById("task-title").value;
+	var taskDesc = document.getElementById("task-desc").value;
 
+	if (taskTitle.trim().length == 0 && taskDesc.trim().length == 0) {
+		alert("Add one task");
+	} else {
 
 	let task = {
 		title: document.getElementById('task-title').value,
@@ -89,6 +94,8 @@ const addTask = (ev) => {
 		del.addEventListener('click', deleteTask)
 
 	  document.querySelector('form').reset();
+	}
+
 	}
 
 
